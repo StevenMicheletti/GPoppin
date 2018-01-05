@@ -25,7 +25,7 @@ GPoppin is not yet available on CRAN. Therefore you must have pre-installed the 
 ### Installing in R
 set your working directory and 
 
-> install.packages("GPoppin", repos=NULL, type="source")   
+> install.packages("GPoppin.tar", repos=NULL, type="source")   
 > library("GPoppin")
 
 ## Example files 
