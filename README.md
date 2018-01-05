@@ -32,7 +32,7 @@ set your working directory and
 
 There are multiple example files built into GPoppin which include:
 
-ex_prog : example of progent input from a .csv
-ex_loci: example loci input for filtering loci
-ex_match: example loci input for matching locus order
-ex_pop : example input for rearranging populations
+ex_prog : example of progent input from a .csv  
+ex_loci: example loci input for filtering loci  
+ex_match: example loci input for matching locus order  
+ex_pop : example input for rearranging populations  
