@@ -15,21 +15,23 @@ sortloci - Remove or keep loci based on external list.
 
 ### Dependencies
 GPoppin is not yet available on CRAN. Therefore you must have pre-installed the following packages:
-    adegenet  
-    data.table  
-    ggplot2  
-    hierfstat  
-    pegas  
+    
+    > install.packages('adegenet') 
+    > install.packages('data.table')  
+    > install.packages('ggplot2')  
+    > install.packages('hierfstat')  
+    > install.packages('pegas')  
 
 ### Installing in R
 set your working directory and 
 
-$ install.packages("GPoppin", repos=NULL, type="source") 
-$ library("GPoppin"
+> install.packages("GPoppin", repos=NULL, type="source") 
+> library("GPoppin"
 
 ## Example files 
 
 There are multiple example files built into GPoppin which include:
+
 ex_prog : example of progent input from a .csv
 ex_loci: example loci input for filtering loci
 ex_match: example loci input for matching locus order
