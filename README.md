@@ -1,5 +1,5 @@
 # GPoppin
-GPoppin, a R package for editing, simulating, and analyzing genotypes in Genepop format
+GPoppin, an R package for editing, simulating, and analyzing genotypes in Genepop format
 
 ### Functions
 
@@ -13,7 +13,7 @@ genosim - Simulate individual genotypes based on allele frequencies. Can incorpo
 
 ## Installation
 
-GPoppin is intended to be installed on desktop computers, but also functions on servers.  
+GPoppin is intended to be installed on desktop computers, but also functions on Linux-based servers.  
 
 ### Dependencies
 GPoppin is not available on CRAN. Therefore, you must pre-install the following packages:
@@ -25,7 +25,7 @@ GPoppin is not available on CRAN. Therefore, you must pre-install the following 
     > install.packages('pegas')  
 
 ### Installing in R
-set your working directory and 
+set your working directory and :
 
 > install.packages("GPoppin.tar", repos=NULL, type="source")   
 > library("GPoppin")
