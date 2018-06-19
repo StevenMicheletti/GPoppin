@@ -1,20 +1,22 @@
 # GPoppin
-GPoppin a R package for editing, simulation, and analysis using Genepop format
+GPoppin, a R package for editing, simulating, and analyzing genotypes in Genepop format
 
 Functions
 
-buildpops - Specify which populations individuals belong to. Also good for subsetting individuals  
-fixformat - Fix special characters and locus names that analysis tools frequency have issues with  
-genosim - Simulate individual genotypes based on allele frequencies. Can incorporate He-Ho   
-matchloci - Rearrange loci based on a provided list  
-popgen - Perform a suite of analyses with adegenet, generate summaries  
-prog2gp - Convert Progeny exports to genepop format  
+prog2gp - Convert Progeny exports (1 allele per columns format) into Genepop format.  
+fixformat - Fix special characters and locus names in Genepop that analysis tools have issues with.  
+popgen - Perform a suite of analyses with adegenet, generate summaries, QC loci.  
 sortloci - Remove or keep loci based on external list.  
+Buildpops -  Define populations and individuals that belong to them. Good for subsetting individuals.  
+matchloci - Rearrange locus order and content based on a user-provided list.  
+genosim - Simulate individual genotypes based on allele frequencies. Can incorporate Ho-He.  
 
 ## Installation
 
+GPoppin is intended to be installed on desktop computers, but also functions on servers.  
+
 ### Dependencies
-GPoppin is not yet available on CRAN. Therefore you must have pre-installed the following packages:
+GPoppin is not available on CRAN. Therefore, you must pre-install the following packages:
     
     > install.packages('adegenet') 
     > install.packages('data.table')  
