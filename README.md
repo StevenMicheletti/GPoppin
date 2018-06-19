@@ -1,9 +1,9 @@
 # GPoppin
 GPoppin, a R package for editing, simulating, and analyzing genotypes in Genepop format
 
-Functions
+### Functions
 
-prog2gp - Convert Progeny exports (1 allele per columns format) into Genepop format.  
+prog2gp - Convert Progeny csv/txt exports (1 allele per columns format) into Genepop format.  
 fixformat - Fix special characters and locus names in Genepop that analysis tools have issues with.  
 popgen - Perform a suite of analyses with adegenet, generate summaries, QC loci.  
 sortloci - Remove or keep loci based on external list.  
