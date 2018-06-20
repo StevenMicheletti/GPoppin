@@ -32,14 +32,14 @@ Set your working director to the location of GPoppin.tar and :
 
 Load devtools and run install_github
 
-> library("Devtools")  
+> library("devtools")  
 > install_github("StevenMicheletti/GPoppin/install")  
 
 OR
 
 Unpack GPoppin.tar as a directory
 
-> library("Devtools")  
+> library("devtools")  
 > install("GPoppin",dependencies = TRUE)
 
 
