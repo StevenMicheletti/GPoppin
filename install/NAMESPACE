@@ -1,0 +1,9 @@
+exportPattern("^[[:alpha:]]+")
+import(data.table)
+import(adegenet)
+importFrom("grDevices", "dev.off", "heat.colors", "pdf", "rainbow")
+importFrom("graphics", "abline", "barplot", "hist", "text")
+importFrom("stats", "bartlett.test", "complete.cases", "na.omit",
+             "p.adjust", "setNames")
+importFrom("utils", "head", "read.csv", "read.delim", "read.table",
+             "tail", "write.table")

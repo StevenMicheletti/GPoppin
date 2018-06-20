@@ -1,0 +1,20 @@
+Package: GPoppin
+Type: Package
+Title: Simulate, edit, and analyze Genepop formatted genotypes
+Version: 0.1.0
+Author: Steven Micheletti
+Authors@R: person("Steven", "Micheletti", email = "smicheletti@ucdavis.edu",
+  role = c("aut", "cre"))
+Description: Genepop format analysis in R. Most functions take advatange of
+    data.table to quickly load and edit large Genepop files. Additionally,
+    analyses are performed using adegenet.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports:
+    adegenet,
+    data.table,
+    ggplot2,
+    hierfstat,
+    pegas
+RoxygenNote: 6.0.1
