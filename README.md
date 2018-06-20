@@ -11,6 +11,8 @@ Buildpops -  Define populations and individuals that belong to them. Good for su
 matchloci - Rearrange locus order and content based on a user-provided list.  
 genosim - Simulate individual genotypes based on allele frequencies. Can incorporate Ho-He.  
 
+See GPoppin_manual.pdf for more details and example use. 
+
 ## Installation
 
 GPoppin is intended to be installed on desktop computers, but also functions on Linux-based servers.  
