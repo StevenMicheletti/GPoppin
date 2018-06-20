@@ -37,7 +37,7 @@ OR
 
 Unpack GPoppin.tar as a directory
 
-> library("Devtools")
+> library("Devtools")  
 > install("GPoppin",dependencies = TRUE)
 
 
