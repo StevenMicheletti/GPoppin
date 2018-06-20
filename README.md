@@ -21,7 +21,7 @@ Download GPoppin.tar into a directory. Prior to installing, you will need to hav
     
   >install.packages(c('adegenet', 'data.table', 'ggplot2', 'hierfstat', 'pegas'))
   
-Set your working director to the location of GPoppin.tar is and :
+Set your working director to the location of GPoppin.tar and :
 
 > install.packages("GPoppin.tar", repos=NULL, type="source")   
 > library("GPoppin")
