@@ -14,25 +14,32 @@ genosim - Simulate individual genotypes based on allele frequencies. Can incorpo
 ## Installation
 
 GPoppin is intended to be installed on desktop computers, but also functions on Linux-based servers.  
+It can be installed locally or using install_github from devtools 
 
-### Dependencies
-GPoppin is not available on CRAN. Therefore, you must pre-install the following packages if you do not have devtools installed:
+### Local Installation
+Download GPoppin.tar into a directory. Prior to installing, you will need to have the following dependencies:  
     
   >install.packages(c('adegenet', 'data.table', 'ggplot2', 'hierfstat', 'pegas'))
   
-### Installing in R
-set your working directory and :
+Set your working directory to where GPoppin.tar is and :
 
 > install.packages("GPoppin.tar", repos=NULL, type="source")   
 > library("GPoppin")
 
-### Alternative Install with Devtools
+### devtools/Github Install
 
-Unpack GPoppin.tar into a directory and: 
+Load devtools and run install_github
 
-> install("GPoppin",dependencies = TRUE)  
+> library("Devtools")
+> install_github("StevenMicheletti/GPoppin/install")  
 
-devtools will automatically install required dependencies
+OR
+
+Unpack GPoppin.tar as a directory
+
+> library("Devtools")
+> install("GPoppin",dependencies = TRUE)
+
 
 ## Example files 
 
@@ -42,6 +49,12 @@ ex_prog : example of progeny input from a .csv
 ex_loci: example loci input for filtering loci  
 ex_match: example loci input for matching locus order  
 ex_pop : example input for rearranging populations  
+
+The easiest way to utilize example files is to begin with prog2gp:
+
+> prog2gp(examp=T, split.pop=T, rem.thres=0.5)
+
+Then use the produced file: ex_prog_out.gen for other functions.
 
 ## Troubleshooting
 
