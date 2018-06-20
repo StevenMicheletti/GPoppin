@@ -26,13 +26,13 @@ Download GPoppin.tar into a directory. Prior to installing, you will need to hav
 Set your working director to the location of GPoppin.tar and :
 
 > install.packages("GPoppin.tar", repos=NULL, type="source")   
-> library("GPoppin")
+> library("GPoppin")  
 
 ### devtools/Github Install
 
 Load devtools and run install_github
 
-> library("Devtools")
+> library("Devtools")  
 > install_github("StevenMicheletti/GPoppin/install")  
 
 OR
