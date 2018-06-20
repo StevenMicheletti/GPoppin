@@ -16,19 +16,23 @@ genosim - Simulate individual genotypes based on allele frequencies. Can incorpo
 GPoppin is intended to be installed on desktop computers, but also functions on Linux-based servers.  
 
 ### Dependencies
-GPoppin is not available on CRAN. Therefore, you must pre-install the following packages:
+GPoppin is not available on CRAN. Therefore, you must pre-install the following packages if you do not have devtools installed:
     
-    > install.packages('adegenet') 
-    > install.packages('data.table')  
-    > install.packages('ggplot2')  
-    > install.packages('hierfstat')  
-    > install.packages('pegas')  
-
+  >install.packages(c('adegenet', 'data.table', 'ggplot2', 'hierfstat', 'pegas'))
+  
 ### Installing in R
 set your working directory and :
 
 > install.packages("GPoppin.tar", repos=NULL, type="source")   
 > library("GPoppin")
+
+### Alternative Install with Devtools
+
+Unpack GPoppin.tar into a directory and: 
+
+> install("GPoppin",dependencies = TRUE)  
+
+devtools will automatically install required dependencies
 
 ## Example files 
 
@@ -38,3 +42,9 @@ ex_prog : example of progeny input from a .csv
 ex_loci: example loci input for filtering loci  
 ex_match: example loci input for matching locus order  
 ex_pop : example input for rearranging populations  
+
+## Troubleshooting
+
+GPoppin relies on multiple external dependencies. Any problems are likely to stem from these external packages.  
+
+adegenet, in particular, is paired with many dependencies. On occasion an associated dependency will not properly install. If this occurs, installation of GPoppin will exit with an error, indicating the name of the package that failed. Usually this issue can be resolved by simply installing the package that failed. If prompted "Do you want to install from sources the package which needs compilation?," select no. 
